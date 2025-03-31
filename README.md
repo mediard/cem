@@ -9,3 +9,9 @@ Here's what the tracing code does.
 1) The floor plan is defined in myroommm.go3 with multiplayered walls. The complex reflection coefficients of the incident electromagnetic waves are computed based on angle of incident.
 2) Image-based algorithm is used in the ray-tracing code.
 3) The .TBL files are field strength.
+
+Compile: gfortran all_data.f90 raytracing.f90 indoor.f90 -o indoor_program -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
+The -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk was necessary for me but may not be necessary for you.
+Then run ./indoor_program
+
+Soon a well-document C++ version will be released.
